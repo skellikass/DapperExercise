@@ -17,7 +17,7 @@ namespace DapperExercise
         }
         public IEnumerable<Department> GetAllDepartments()
         {
-            return _connection.Query<Department>("SELECT * FROM Departments;");
+            return _connection.Query<Department>("SELECT * FROM departments;");
         }
         public void InsertDepartment(string newDeptName)
         {
